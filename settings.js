@@ -28,6 +28,14 @@ window.spinnakerSettings = {
   defaultCategory: 'serverGroup',
   defaultInstancePort: 80,
   providers: {
+    cf: {
+      defaults: {
+        account: 'Sanbox',
+        region: 'WY20',
+        zone: 'Sandbox'
+      },
+      primaryAccounts: ['Sandbox','Dev']
+    },
     azure: {
       defaults: {
         account: 'azure-test',
