@@ -34,7 +34,7 @@ window.spinnakerSettings = {
         region: 'WY20',
         zone: 'Sandbox'
       },
-      primaryAccounts: ['Sandbox','Dev']
+      primaryAccounts: ['Sandbox', 'Dev']
     },
     azure: {
       defaults: {
