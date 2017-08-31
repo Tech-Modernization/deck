@@ -1,0 +1,14 @@
+FROM node
+
+COPY . deck/
+
+WORKDIR deck
+
+RUN npm install -g -s --no-progress yarn && \
+    yarn && \
+    yarn run build && \
+    yarn cache clean
+
+CMD [ "yarn", "start" ]
+
+EXPOSE 9000
